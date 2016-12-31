@@ -1,0 +1,41 @@
+x + x + 2
+x - x + 2
+x + (-1)
+(22 + 22)
+x + (x + 2) - (2 - (x + x))
+x * 2
+x * x * x
+x / 2
+x / x / x
+x / (x / x)
+(x / x) / x
+x ** 2
+x ** x
+3 * x * x + 5 * x + 2
+x ** x ** x
+x ** x ** x ** x
+x
+-1
+-5 - x - (x - (-3 + x))
+x - x - x
+x - (x - x)
+ln(x)
+2 + ln(x)
+2 + ln(x) * (7 * x)
+ln(x) * ln(x)
+asin(x)
+acos(x)
+atan(x)
+acot(x)
+asin(x) + acos(x)
+sin(x)
+cos(x)
+sin(x) * cos(x)
+sin(x) - cos(x)
+tan(x)
+cot(x)
+tan(x)*cot(x)
+(sin(x)) ** 2 + cos(x) ** 2
+e
+pi
+e + pi
