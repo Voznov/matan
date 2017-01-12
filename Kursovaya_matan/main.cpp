@@ -58,6 +58,7 @@ public:
     char n[100];
     string p;
     int n_size;
+    //int p_size;
     v* left;
     v* right;
     v* dad;
@@ -95,6 +96,10 @@ public:
             n_size -= 2;
             was = true;
         }
+//        coo "1)";
+//        for(int i = 0; i < n_size; ++i)
+//            coo n[i];
+//        coon;
         if(intInString(n, n_size)) // const
         {
             p.resize(1);
@@ -218,9 +223,9 @@ public:
             p += "))";
             return;
         }
-        if((n[0] == 't') && (n[2] == 'n') && (ls == rs)) // tan tan tan
+        if((n[0] == 't') && (n[1] == 'g') && (ls == rs)) // tg tg tg tg
         {
-            kudah(0, 3);
+            kudah(0, 2);
             p.resize(right->n_size + 13 + right->p.size());
             p = "(";
             rightp
@@ -229,7 +234,7 @@ public:
             p += ")**2)";
             return;
         }
-        if((n[0] == 'c') && (n[2] == 't') && (ls == rs)) // cot cot cot
+        if((n[0] == 'c') && (n[1] == 't') && (ls == rs)) // ctg ctg ctg
         {
             kudah(0, 3);
             p.resize(right->n_size + 16 + right->p.size());
@@ -240,9 +245,9 @@ public:
             p += ")**2)";
             return;
         }
-        if((n[0] == 'a') && (n[2] == 'i') && (ls == rs)) // asin asin
+        if((n[0] == 'a') && (n[4] == 'i') && (ls == rs)) // arcsin arcsin
         {
-            kudah(0, 4);
+            kudah(0, 6);
             p.resize(right->n_size + 10 + right->p.size());
             p = "(";
             rightp
@@ -251,9 +256,9 @@ public:
             p += ")**2)**(1/2)";
             return;
         }
-        if((n[0] == 'a') && (n[2] == 'o') && (ls == rs)) // acos acos
+        if((n[0] == 'a') && (n[4] == 'o') && (ls == rs)) // arccos arccos
         {
-            kudah(0, 4);
+            kudah(0, 6);
             p.resize(right->n_size + 10 + right->p.size());
             p = "(-(";
             rightp
@@ -262,9 +267,9 @@ public:
             p += ")**2)**(1/2)";
             return;
         }
-        if((n[0] == 'a') && (n[1] == 't') && (ls == rs)) // atan atan
+        if((n[0] == 'a') && (n[3] == 't') && (ls == rs)) // arctg arctg
         {
-            kudah(0, 4);
+            kudah(0, 5);
             p.resize(right->n_size + 10 + right->p.size());
             p = "(";
             rightp
@@ -273,9 +278,9 @@ public:
             p += ")**2)";
             return;
         }
-        if((n[0] == 'a') && (n[3] == 't') && (ls == rs)) // acot acot
+        if((n[0] == 'a') && (n[4] == 't') && (ls == rs)) // arcctg arcctg
         {
-            kudah(0, 4);
+            kudah(0, 6);
             p.resize(right->n_size + 12 + right->p.size());
             p = "(-(";
             rightp
